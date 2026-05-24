@@ -1,0 +1,4 @@
+# .env contains your secret Gmail credentials — NEVER commit this to Git
+.env
+venv
+

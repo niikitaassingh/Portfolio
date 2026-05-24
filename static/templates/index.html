@@ -1,0 +1,524 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ profile.name }} | Data Analyst & Python Engineer</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- FontAwesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Custom Stylesheet -->
+    <link rel="stylesheet" href="{{ url_for('static', path='/css/style.css') }}">
+</head>
+
+<body>
+
+    <!-- Glassmorphic Header Navbar -->
+    <nav class="navbar navbar-expand-lg fixed-top glass-card py-3 px-4 mx-md-5 my-3" style="z-index: 9999;">
+        <div class="container-fluid">
+            <a class="navbar-brand fw-bold fs-4 text-gradient-accent" href="#home">
+                <i class="fas fa-chart-line me-2"></i>{{ profile.name }}
+            </a>
+            <button class="navbar-toggler border-0 text-white" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarNav">
+                <span class="fas fa-bars fs-5"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                <ul class="navbar-nav gap-2 mt-3 mt-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link text-white fw-semibold px-3" href="#home">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white fw-semibold px-3" href="#skills">Skills</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white fw-semibold px-3" href="#projects">Projects</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white fw-semibold px-3" href="#experience">Experience</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white fw-semibold px-3" href="#contact">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero-section">
+        <div class="container hero-content mt-5">
+            <div class="row align-items-center g-5">
+                <div class="col-lg-7 text-start">
+                    <span class="hero-badge-pill"><i class="fas fa-bolt me-2"></i>Data Analytics & Backend
+                        Systems</span>
+                    <h1 class="display-3 fw-bold mb-3">Hi, I'm <span class="text-gradient-accent">{{ profile.name
+                            }}</span></h1>
+                    <h2 class="h3 mb-4 text-gradient-cyan">{{ profile.title }}</h2>
+                    <p class="lead text-muted-custom mb-5 w-90" style="line-height: 1.8;">
+                        {{ profile.summary }}
+                    </p>
+                    <div class="d-flex flex-wrap gap-3 hero-buttons">
+                        <a href="#contact" class="btn hero-btn-primary btn-lg">
+                            <i class="fas fa-paper-plane me-2"></i>Get In Touch
+                        </a>
+                        <a href="{{ profile.linkedin }}" target="_blank" class="btn hero-btn-secondary btn-lg">
+                            <i class="fab fa-linkedin me-2"></i>Connect on LinkedIn
+                        </a>
+                    </div>
+                </div>
+                <div class="col-lg-5">
+                    <!-- Premium Tech Cluster Card -->
+                    <div class="glass-card p-4 p-md-5 text-center">
+                        <h4 class="mb-4 fw-bold text-gradient-accent"><i class="fas fa-layer-group me-2"></i>Core
+                            Specialization</h4>
+                        <div class="d-flex flex-wrap justify-content-center gap-3">
+                            <span class="skill-badge"><i class="fas fa-chart-bar text-info me-2"></i>Power BI</span>
+                            <span class="skill-badge"><i class="fab fa-python text-warning me-2"></i>Python</span>
+                            <span class="skill-badge"><i class="fas fa-database text-primary me-2"></i>SQL</span>
+                            <span class="skill-badge"><i class="fas fa-server text-success me-2"></i>Django</span>
+                            <span class="skill-badge"><i class="fas fa-cubes text-secondary me-2"></i>ETL
+                                Pipelines</span>
+                            <span class="skill-badge"><i class="fas fa-project-diagram text-info me-2"></i>Data
+                                Modeling</span>
+                            <span class="skill-badge"><i class="fas fa-cogs text-danger me-2"></i>REST APIs</span>
+                        </div>
+                        <hr class="my-4 border-secondary opacity-25">
+                        <div class="d-flex justify-content-around text-start mt-3">
+                            <div>
+                                <h6 class="text-gradient-cyan mb-1 fw-bold">DBs</h6>
+                                <p class="small text-muted mb-0">Postgres, MySQL</p>
+                            </div>
+                            <div>
+                                <h6 class="text-gradient-cyan mb-1 fw-bold">Analytcs</h6>
+                                <p class="small text-muted mb-0">Pandas, DAX</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Stats Highlights Ribbon -->
+    <section class="stats-ribbon">
+        <div class="container">
+            <div class="glass-card py-4 px-3 px-md-5">
+                <div class="row align-items-center g-4">
+                    <div class="col-6 col-lg-3">
+                        <div class="stat-box">
+                            <div class="stat-number text-gradient-accent">3+</div>
+                            <div class="stat-label">Years Experience</div>
+                        </div>
+                    </div>
+                    <div class="col-6 col-lg-3">
+                        <div class="stat-box">
+                            <div class="stat-number text-gradient-cyan">10+</div>
+                            <div class="stat-label">Dashboards Delivered</div>
+                        </div>
+                    </div>
+                    <div class="col-6 col-lg-3">
+                        <div class="stat-box">
+                            <div class="stat-number text-gradient-accent">20+</div>
+                            <div class="stat-label">REST APIs Built</div>
+                        </div>
+                    </div>
+                    <div class="col-6 col-lg-3">
+                        <div class="stat-box">
+                            <div class="stat-number text-gradient-cyan">10K+</div>
+                            <div class="stat-label">Users Monitored</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Technical Arsenal (Skills) Section -->
+    <section id="skills" class="container my-5 py-5">
+        <div class="section-title-container">
+            <h3 class="section-title text-gradient-accent">Technical Arsenal</h3>
+        </div>
+        <div class="row g-4 mt-2">
+            {% for category, skill_list in skills.items() %}
+            <div class="col-md-6">
+                <div class="glass-card p-4 p-md-5 h-100">
+                    <h4
+                        class="skill-category-title {% if loop.index == 1 %}text-gradient-cyan{% else %}text-gradient-accent{% endif %}">
+                        {% if loop.index == 1 %}
+                        <i class="fas fa-chart-line"></i>
+                        {% else %}
+                        <i class="fas fa-code-branch"></i>
+                        {% endif %}
+                        {{ category }}
+                    </h4>
+                    <p class="text-muted-custom small mb-4">Core languages, tools, and methodologies utilized in past
+                        projects.</p>
+                    <div class="d-flex flex-wrap gap-2 mt-3">
+                        {% for skill in skill_list %}
+                        <span class="skill-badge">{{ skill }}</span>
+                        {% endfor %}
+                    </div>
+                </div>
+            </div>
+            {% endfor %}
+        </div>
+    </section>
+
+    <!-- Projects Portfolio Section (With Real-Time Filtering & Lightbox) -->
+    <section id="projects" class="container my-5 py-5">
+        <div class="section-title-container">
+            <h3 class="section-title text-gradient-accent">Featured Dashboards & Projects</h3>
+        </div>
+
+        <!-- Filter Controls -->
+        <div class="filter-container">
+            <button class="filter-btn active" data-filter="all">All Projects</button>
+            <button class="filter-btn" data-filter="powerbi">Power BI & Analytics</button>
+            <button class="filter-btn" data-filter="backend">Backend & APIs</button>
+        </div>
+
+        <div class="row g-4 mt-2" id="projects-grid">
+            {% for project in projects %}
+            <div class="col-lg-6 project-card-container" data-category="{{ project.category }}">
+                <div class="glass-card project-card">
+
+                    <!-- Bootstrap Image Carousel -->
+                    <div id="carousel-{{ loop.index }}" class="carousel slide" data-bs-ride="false">
+                        <div class="carousel-inner rounded-top">
+                            {% for img in project.images %}
+                            <div class="carousel-item {% if loop.index == 1 %}active{% endif %}">
+                                <!-- Image Container supporting Object-Fit Contain and Lightbox Click -->
+                                <div class="project-img-container" onclick="openLightbox(this)">
+                                    <img src="{{ url_for('static', path='/images/' + img) }}" class="project-img"
+                                        alt="Screenshot of {{ project.title }}" onerror="handleImageError(this)">
+                                    <div class="zoom-hint">
+                                        <i class="fas fa-search-plus"></i>
+                                    </div>
+                                </div>
+                            </div>
+                            {% endfor %}
+                        </div>
+                        <!-- Carousel Controls -->
+                        {% if project.images|length > 1 %}
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carousel-{{ loop.index }}"
+                            data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#carousel-{{ loop.index }}"
+                            data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Next</span>
+                        </button>
+                        {% endif %}
+                    </div>
+
+                    <div class="project-card-body">
+                        <h4 class="project-title">{{ project.title }}</h4>
+                        <div class="mb-3">
+                            {% for tech in project.tech %}
+                            <span class="project-tech-badge">{{ tech }}</span>
+                            {% endfor %}
+                        </div>
+                        <p class="project-description flex-grow-1">{{ project.description }}</p>
+                        {% if project.github %}
+                        <a href="{{ project.github }}" target="_blank" class="project-code-link">
+                            <i class="fab fa-github"></i> View Code
+                        </a>
+                        {% endif %}
+                    </div>
+                </div>
+            </div>
+            {% endfor %}
+        </div>
+    </section>
+
+    <!-- Experience Timeline Section -->
+    <section id="experience" class="bg-white-override py-5 my-5 experience-section">
+        <div class="container">
+            <div class="section-title-container">
+                <h3 class="section-title text-gradient-accent">Professional Journey</h3>
+            </div>
+            <div class="row justify-content-center">
+                <div class="col-lg-10 col-xl-9">
+                    <div class="timeline-container">
+                        {% for job in experience %}
+                        <div class="timeline-item">
+                            <div class="timeline-dot"></div>
+                            <div class="glass-card p-4 p-md-5">
+                                <div class="d-flex flex-wrap justify-content-between align-items-start gap-2">
+                                    <div>
+                                        <h4 class="timeline-role mb-1">{{ job.role }}</h4>
+                                        <h5 class="timeline-company mb-0">{{ job.company }}</h5>
+                                    </div>
+                                    <div class="timeline-duration">
+                                        <i class="far fa-calendar-alt text-gradient-cyan"></i>
+                                        <span>{{ job.duration }}</span>
+                                    </div>
+                                </div>
+                                <ul class="timeline-points mt-4">
+                                    {% for point in job.points %}
+                                    <li>{{ point }}</li>
+                                    {% endfor %}
+                                </ul>
+                            </div>
+                        </div>
+                        {% endfor %}
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="container contact-section my-5 py-5">
+        <div class="section-title-container">
+            <h3 class="section-title text-gradient-accent">Let's Connect</h3>
+        </div>
+        <div class="row g-5 align-items-center">
+            <div class="col-lg-5 text-start">
+                <h3 class="fw-bold mb-4">Let's build something <span class="text-gradient-cyan">actionable</span>.</h3>
+                <p class="text-muted-custom mb-5" style="line-height: 1.8;">
+                    Whether you need complex SQL queries, backend pipelines built in Python/FastAPI, or intuitive,
+                    dynamic Power BI reports—I'm ready to bring data to life for your team. Let's discuss your next
+                    project!
+                </p>
+                <div class="d-flex flex-column gap-4">
+                    <div class="d-flex align-items-center gap-3">
+                        <div class="glass-card d-flex justify-content-center align-items-center"
+                            style="width: 50px; height: 50px; border-radius: 12px; color: var(--accent-cyan);">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <div>
+                            <a href="mailto:{{ profile.email }}" class="text-white fw-semibold text-decoration-none">{{
+                                profile.email }}</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-7">
+                <div class="glass-card contact-card">
+                    <h4 class="fw-bold mb-4 text-gradient-accent"><i class="fas fa-envelope-open-text me-2"></i>Send
+                        Message</h4>
+                    <form id="contactForm" onsubmit="submitContactForm(event)">
+                        <div class="row g-3">
+                            <div class="col-md-6">
+                                <label class="form-label">Full Name</label>
+                                <input type="text" id="contactName" name="name" class="form-control"
+                                    placeholder="e.g. Nikita Singh" required>
+                            </div>
+                            <div class="col-md-6">
+                                <label class="form-label">Email Address</label>
+                                <input type="email" id="contactEmail" name="email" class="form-control"
+                                    placeholder="e.g. name@company.com" required>
+                            </div>
+                            <div class="col-12">
+                                <label class="form-label">Subject</label>
+                                <input type="text" id="contactSubject" name="subject" class="form-control"
+                                    placeholder="Project Inquiry, Consultation, Job Offer..." required>
+                            </div>
+                            <div class="col-12">
+                                <label class="form-label">Message Details</label>
+                                <textarea id="contactMessage" name="message" class="form-control" rows="5"
+                                    placeholder="Hi Nikita, I loved your dashboard work..." required></textarea>
+                            </div>
+                            <div class="col-12 mt-4">
+                                <button type="submit" id="submitBtn" class="btn hero-btn-primary w-100">
+                                    <span id="submitBtnText"><i class="fas fa-paper-plane me-2"></i>Submit
+                                        Inquiry</span>
+                                    <span id="submitBtnSpinner" class="d-none">
+                                        <span class="spinner-border spinner-border-sm me-2"
+                                            role="status"></span>Sending...
+                                    </span>
+                                </button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="text-center text-white py-5 mt-auto">
+        <div class="container">
+            <p class="mb-2 text-muted-custom">Designed & Crafted by {{ profile.name }}❤️</p>
+        </div>
+    </footer>
+
+    <!-- Toast Notification -->
+    <div id="contactToast"
+        style="position:fixed; bottom:30px; right:30px; z-index:99998; min-width:320px; display:none;">
+        <div id="toastInner" class="glass-card p-4 d-flex align-items-start gap-3" style="border-radius:14px;">
+            <i id="toastIcon" class="fas fa-check-circle fs-4 mt-1" style="color: var(--accent-cyan);"></i>
+            <div>
+                <div id="toastTitle" class="fw-bold mb-1" style="font-size:1rem;">Message Sent!</div>
+                <div id="toastMsg" class="text-muted-custom" style="font-size:0.9rem;"></div>
+            </div>
+            <button onclick="hideToast()"
+                style="background:none;border:none;color:var(--text-muted);font-size:1.2rem;cursor:pointer;margin-left:auto;">&times;</button>
+        </div>
+    </div>
+
+    <!-- Full Screen Lightbox Modal -->
+    <div id="lightboxModal" class="lightbox-modal" onclick="closeLightbox()">
+        <button class="lightbox-close" onclick="closeLightbox()">&times;</button>
+        <div class="lightbox-content" onclick="event.stopPropagation()">
+            <img id="lightboxImg" src="" alt="High Resolution View">
+        </div>
+    </div>
+
+    <!-- Bootstrap JS for Carousels and Navbar Collapse -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Custom Vanilla JS for Dynamic Filtering & Lightbox Modal -->
+    <script>
+        // --- 1. Project Filtering Logic ---
+        const filterButtons = document.querySelectorAll('.filter-btn');
+        const projectCards = document.querySelectorAll('.project-card-container');
+
+        filterButtons.forEach(button => {
+            button.addEventListener('click', () => {
+                // Toggle active button class
+                filterButtons.forEach(btn => btn.classList.remove('active'));
+                button.classList.add('active');
+
+                const filterValue = button.getAttribute('data-filter');
+
+                projectCards.forEach(card => {
+                    const cardCategory = card.getAttribute('data-category');
+                    if (filterValue === 'all' || cardCategory === filterValue) {
+                        card.classList.remove('filtered-out');
+                    } else {
+                        card.classList.add('filtered-out');
+                    }
+                });
+            });
+        });
+
+        // --- Auto-close navbar collapse menu on link click (for mobile UX) ---
+        const navLinks = document.querySelectorAll('.nav-link');
+        const navbarCollapse = document.getElementById('navbarNav');
+
+        navLinks.forEach(link => {
+            link.addEventListener('click', () => {
+                if (navbarCollapse.classList.contains('show')) {
+                    const bsCollapse = bootstrap.Collapse.getInstance(navbarCollapse) || new bootstrap.Collapse(navbarCollapse);
+                    bsCollapse.hide();
+                }
+            });
+        });
+
+        // --- 2. Image Error Fallback Logic ---
+        function handleImageError(img) {
+            img.onerror = null; // Prevent infinite loop
+            img.src = "data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='800' height='450' viewBox='0 0 800 450'><rect width='800' height='450' fill='%230b1120'/><text x='50%' y='48%' dominant-baseline='middle' text-anchor='middle' font-family='sans-serif' font-size='24' fill='%2306b6d4' font-weight='bold'>System Dashboard Active</text><text x='50%' y='58%' dominant-baseline='middle' text-anchor='middle' font-family='sans-serif' font-size='14' fill='%239ca3af'>Database connections and relational models verified</text></svg>";
+        }
+
+        // --- 3. Lightbox Modal Interaction ---
+        const lightbox = document.getElementById('lightboxModal');
+        const lightboxImg = document.getElementById('lightboxImg');
+
+        function openLightbox(imgContainer) {
+            const imgElement = imgContainer.querySelector('.project-img');
+            if (imgElement && imgElement.src) {
+                lightboxImg.src = imgElement.src;
+                lightbox.classList.add('active');
+                document.body.style.overflow = 'hidden'; // Disable page scrolling while zoomed
+            }
+        }
+
+        function closeLightbox() {
+            lightbox.classList.remove('active');
+            document.body.style.overflow = 'auto'; // Re-enable page scrolling
+        }
+
+        // Close on escape key
+        document.addEventListener('keydown', (e) => {
+            if (e.key === 'Escape') {
+                closeLightbox();
+            }
+        });
+
+        // --- 4. Contact Form AJAX Submission ---
+        async function submitContactForm(event) {
+            event.preventDefault();
+
+            const btn = document.getElementById('submitBtn');
+            const btnText = document.getElementById('submitBtnText');
+            const btnSpinner = document.getElementById('submitBtnSpinner');
+
+            // Show loading spinner
+            btn.disabled = true;
+            btnText.classList.add('d-none');
+            btnSpinner.classList.remove('d-none');
+
+            const formData = new FormData();
+            formData.append('name', document.getElementById('contactName').value.trim());
+            formData.append('email', document.getElementById('contactEmail').value.trim());
+            formData.append('subject', document.getElementById('contactSubject').value.trim());
+            formData.append('message', document.getElementById('contactMessage').value.trim());
+
+            try {
+                const response = await fetch('/contact', {
+                    method: 'POST',
+                    body: formData
+                });
+                const data = await response.json();
+
+                if (data.success) {
+                    showToast('success', 'Message Sent!', data.message);
+                    document.getElementById('contactForm').reset();
+                } else {
+                    showToast('error', 'Could Not Send', data.message);
+                }
+            } catch (err) {
+                showToast('error', 'Network Error', 'Something went wrong. Please try emailing directly.');
+            } finally {
+                // Restore button state
+                btn.disabled = false;
+                btnText.classList.remove('d-none');
+                btnSpinner.classList.add('d-none');
+            }
+        }
+
+        // --- 5. Toast Notification Helpers ---
+        let toastTimer = null;
+
+        function showToast(type, title, message) {
+            const toast = document.getElementById('contactToast');
+            const icon = document.getElementById('toastIcon');
+            const ttl = document.getElementById('toastTitle');
+            const msg = document.getElementById('toastMsg');
+
+            ttl.textContent = title;
+            msg.textContent = message;
+
+            if (type === 'success') {
+                icon.className = 'fas fa-check-circle fs-4 mt-1';
+                icon.style.color = 'var(--accent-cyan)';
+            } else {
+                icon.className = 'fas fa-exclamation-circle fs-4 mt-1';
+                icon.style.color = '#f87171';
+            }
+
+            toast.style.display = 'block';
+            toast.style.animation = 'none';
+            toast.offsetHeight; // force reflow
+            toast.style.animation = 'toastSlideIn 0.35s ease';
+
+            // Auto-hide after 6 seconds
+            clearTimeout(toastTimer);
+            toastTimer = setTimeout(hideToast, 6000);
+        }
+
+        function hideToast() {
+            document.getElementById('contactToast').style.display = 'none';
+        }
+    </script>
+</body>
+
+</html>
