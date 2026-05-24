@@ -87,6 +87,7 @@ projects = [
         "tech": ["Power BI", "HR Analytics", "Data Cleaning", "DAX"],
         "description": "Comprehensive talent acquisition and workforce performance dashboard. Visualized employee attrition, department-wise headcount distribution, performance scores, and hiring funnel efficiency.",
         "images": ["hr_dashboard_1.png", "hr_dashboard_2.png", "hr_dashboard_3.png", "hr_dashboard_4.png"],
+        "github": "https://github.com/niikitaassingh/HR-Talent-Analytics-Portal.git",
         "category": "powerbi"
     },
     {
@@ -94,20 +95,23 @@ projects = [
         "tech": ["Power BI", "Data Modeling", "DAX", "SQL"],
         "description": "Interactive Power BI dashboard tracking global sales KPIs, regional profitability, and product performance. Developed complex DAX measures for year-over-year growth and dynamic filtering.",
         "images": ["sales_dashboard_1.png", "sales_dashboard_2.png", "sales_dashboard_3.png", "sales_dashboard_4.jpeg"],
+        "github": "https://github.com/niikitaassingh/sale_dashboard.git",
         "category": "powerbi"
     },
     {
         "title": "Meta Ads Campaign Marketing Analytics",
-        "tech": ["Power BI", "Marketing Analytics", "ETL Pipelines", "SQL"],
-        "description": "Campaign performance and ROAS analytics dashboard. Consolidated data from Meta Ads Manager to track Click-Through Rates (CTR), Conversion Rates, and Cost Per Acquisition (CPA) across ad sets.",
+        "tech": ["Power BI", "Marketing Analytics", "ETL Pipelines", "SQL", "DAX","Data Cleaning"],
+        "description": "Campaign performance analytics dashboard. Consolidated data from Meta Ads Manager to track Click-Through Rates (CTR), Conversion Rates, and Cost Per Acquisition (CPA) across ad sets.",
         "images": ["meta_dashboard_1.png", "meta_dashboard_2.png", "meta_dashboard_3.png"],
+        "github": "https://github.com/niikitaassingh/Meta-Ads-Campaign-Marketing-Analytics.git",
         "category": "powerbi"
     },
     {
         "title": "Real Estate Market Analysis & House Valuation Report",
-        "tech": ["Power BI", "Data Analysis", "Python (Pandas)", "GIS Mapping"],
+        "tech": ["Power BI", "Data Analysis", "GIS Mapping", "DAX", "Data Visualization", "Data Cleaning"],
         "description": "Dynamic house pricing and geographic market report. Integrated GIS mapping to show average sales prices by zip code, pricing trends over time, and demographic correlation analysis.",
         "images": ["house_report_1.png", "house_report_2.png"],
+        "github": "https://github.com/niikitaassingh/Real-Estate-Market-Analysis-House-Valuation-Report.git",
         "category": "powerbi"
     }
 ]
