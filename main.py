@@ -28,7 +28,7 @@ profile_data = {
 }
 
 skills = {
-    "Data & Analytics": ["Power BI", "SQL", "Python (Pandas, NumPy)", "ETL Pipelines", "Data Modeling", "DAX"],
+    "Data & Analytics": ["Power BI", "SQL",  "ETL Pipelines",   "Python (Pandas, NumPy, Matplotlib)", "Data Modeling", "DAX"],
     "Backend & Engineering": ["Django", "FastAPI", "REST APIs", "PostgreSQL", "MySQL", "Git & CI/CD"]
 }
 
