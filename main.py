@@ -83,11 +83,11 @@ projects = [
         "category": "backend"
     },
     {
-        "title": "HR Talent Analytics Portal",
-        "tech": ["Power BI", "HR Analytics", "Data Cleaning", "DAX"],
-        "description": "Comprehensive talent acquisition and workforce performance dashboard. Visualized employee attrition, department-wise headcount distribution, performance scores, and hiring funnel efficiency.",
-        "images": ["hr_dashboard_1.png", "hr_dashboard_2.png", "hr_dashboard_3.png", "hr_dashboard_4.png"],
-        "github": "https://github.com/niikitaassingh/HR-Talent-Analytics-Portal.git",
+        "title": "Superstore End-to-End ETL & Analytics Pipeline",
+        "tech": ["Python", "PostgreSQL", "SQLAlchemy", "psycopg2", "Power BI", "DAX", "Star Schema", "Data Modeling", "ETL Pipelines"],
+        "description": "Architected an end-to-end ETL and Business Intelligence system. Built a Python data ingestion pipeline leveraging SQLAlchemy and psycopg2 with integrated data quality validation checks and automated logging. Developed a clean Star Schema relational database model in PostgreSQL, complete with warehouse merge conflict resolution. Designed an interactive Power BI dashboard featuring dynamic filtering, customer cohort analysis, product profitability metrics, shipping/operational efficiency tracking, and key executive KPIs.",
+        "images": ["Executive_img.png", "CUSTOMER ANALYTICS.png", "PRODUCT ANALYTICS.png", "REGIONAL PERFORMANCE.png", "SHIPPING & OPERATIONS.png", "Filters.png"],
+        "github": "https://github.com/niikitaassingh/Superstore-Analytics-Pipeline.git",
         "category": "powerbi"
     },
     {
@@ -104,6 +104,14 @@ projects = [
         "description": "Campaign performance analytics dashboard. Consolidated data from Meta Ads Manager to track Click-Through Rates (CTR), Conversion Rates, and Cost Per Acquisition (CPA) across ad sets.",
         "images": ["meta_dashboard_1.png", "meta_dashboard_2.png", "meta_dashboard_3.png"],
         "github": "https://github.com/niikitaassingh/Meta-Ads-Campaign-Marketing-Analytics.git",
+        "category": "powerbi"
+    },
+    {
+        "title": "HR Talent Analytics Portal",
+        "tech": ["Power BI", "HR Analytics", "Data Cleaning", "DAX"],
+        "description": "Comprehensive talent acquisition and workforce performance dashboard. Visualized employee attrition, department-wise headcount distribution, performance scores, and hiring funnel efficiency.",
+        "images": ["hr_dashboard_1.png", "hr_dashboard_2.png", "hr_dashboard_3.png", "hr_dashboard_4.png"],
+        "github": "https://github.com/niikitaassingh/HR-Talent-Analytics-Portal.git",
         "category": "powerbi"
     },
     {
