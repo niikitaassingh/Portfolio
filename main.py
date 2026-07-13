@@ -28,15 +28,26 @@ profile_data = {
 }
 
 skills = {
-    "Data & Analytics": ["Power BI", "SQL",  "ETL Pipelines",   "Python (Pandas, NumPy, Matplotlib)", "Data Modeling", "DAX"],
+    "Data & Analytics": ["Power BI", "SQL", "ETL Pipelines",   "Python (Pandas, NumPy, Matplotlib)", "Data Modeling", "DAX"],
     "Backend & Engineering": ["Django", "FastAPI", "REST APIs", "PostgreSQL", "MySQL", "Git & CI/CD"]
 }
 
 experience = [
     {
         "role": "Data Analyst",
+        "company": "Techmicra IT Solutions | Ahmedabad, India",
+        "duration": "July 2025 – Present",
+        "points": [
+            "Built interactive Power BI dashboards using advanced DAX measures and Power Query transformations to monitor Sales, Customer, Inventory, and Operations KPIs, enabling real-time insights for stakeholders.",
+            "Automated ETL pipelines using Python (Pandas) and SQL to extract, clean, and transform data from MySQL and Excel sources, reducing manual reporting effort by approximately 70%.",
+            "Developed optimized SQL queries using Joins, CTEs, Window Functions, Views, and Stored Procedures to support ad-hoc analysis, KPI reporting, and executive decision-making.",
+            "Implemented Power BI data models, Row-Level Security (RLS), and drill-through reports in collaboration with cross-functional teams, improving dashboard usability and reducing report refresh time by approximately 35%."
+        ]
+    },
+    {
+        "role": "Data Analyst",
         "company": "Droot Teach",
-        "duration": "Mar 2025 – Present",
+        "duration": "Mar 2025 – Jun 2025",
         "points": [
             "Analyzed VPN platform data (users, servers, sessions) using Python and SQL across 10,000+ active users.",
             "Built and maintained Power BI dashboards tracking server health, country-wise usage, and real-time data consumption.",
